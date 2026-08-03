@@ -1,0 +1,44 @@
+﻿@import "tailwindcss";
+
+@layer base {
+  html { @apply h-full; }
+  body { @apply min-h-screen bg-slate-950 text-slate-50 antialiased; }
+  a { @apply text-inherit no-underline; }
+  * { @apply box-border; }
+}
+@layer components {
+  .container { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }
+  .main { @apply flex-1 py-8 sm:py-10; }
+  .stack { @apply flex flex-col gap-4; }
+  .row { @apply flex flex-wrap items-center gap-3; }
+  .card { @apply rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl; }
+  .alert { @apply rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200; }
+  .label { @apply text-sm font-medium text-slate-300; }
+  .field { @apply flex flex-col gap-2; }
+  .input, .select { @apply w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-slate-50 outline-none transition placeholder:text-slate-500 focus:border-cyan-400/40 focus:ring-4 focus:ring-cyan-400/10; }
+  .btn { @apply inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-70; }
+  .btn-primary { @apply border-0 bg-gradient-to-r from-blue-600 to-cyan-400 text-white shadow-lg shadow-cyan-500/20 hover:brightness-110; }
+  .btn-ghost { @apply bg-transparent; }
+  .auth-wrap { @apply grid min-h-[calc(100vh-10rem)] place-items-center; }
+  .brand-mark { @apply h-10 w-10 rounded-2xl border border-white/10 object-cover shadow-lg shadow-cyan-500/10; }
+  .app-header, .app-footer { @apply border-white/10 bg-slate-950/70 backdrop-blur-xl; }
+  .app-header { @apply border-b; }
+  .app-footer { @apply border-t; }
+  .header-inner, .footer-inner { @apply flex items-center gap-4; }
+  .header-inner { @apply py-3; }
+  .footer-inner { @apply py-5 text-sm text-slate-400; }
+  .header-left { @apply flex items-center gap-3; }
+  .header-right { @apply ml-auto flex items-center gap-2; }
+  .brand { @apply inline-flex items-center gap-3 rounded-full pr-2 font-semibold text-white transition hover:bg-white/5; }
+  .nav { @apply hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1 md:flex; }
+  .nav-link { @apply rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/10 hover:text-white; }
+  .profile-root { @apply relative; }
+  .profile-btn { @apply flex h-11 w-11 items-center justify-center rounded-full border border-cyan-300/20 bg-gradient-to-br from-blue-600 to-cyan-400 text-white shadow-lg shadow-cyan-500/20 transition hover:scale-[1.03]; }
+  .profile-avatar { @apply grid h-9 w-9 place-items-center rounded-full bg-white/10 text-sm font-bold uppercase tracking-wide text-white; }
+  .profile-dropdown { @apply absolute right-0 top-[calc(100%+0.75rem)] w-72 overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 p-2 shadow-2xl shadow-slate-950/60 backdrop-blur-xl; }
+  .profile-dropdown-inner { @apply rounded-2xl border border-white/10 bg-white/5 p-4; }
+  .profile-info { @apply flex items-center gap-3; }
+  .muted { @apply text-slate-400; }
+  .hr { @apply h-px bg-white/10; }
+}
+

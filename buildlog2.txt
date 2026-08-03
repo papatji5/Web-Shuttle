@@ -1,0 +1,23 @@
+
+> ride-hailing-web@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 32.4s
+  Running TypeScript ...
+Failed to type check.
+
+./src/components/DriverLocationAutoTracker.tsx:465:38
+Type error: 'last' is possibly 'null'.
+
+  [90m463 |[0m     [36mconst[0m targetKey = [32m`[0m${[36mtype[0m[32m}:[0m${address ?? [32m''[0m[32m}`[0m;
+  [90m464 |[0m     [36mconst[0m last = lastFocusRef.current;
+[31m[1m>[0m [90m465 |[0m     [36mif[0m (last?.address === address && last.mode === [36mtype[0m) {
+  [90m    |[0m                                      [31m[1m^[0m
+  [90m466 |[0m       [36mreturn[0m;
+  [90m467 |[0m     }
+  [90m468 |[0m     [36mif[0m (pendingFocusRef.current?.address === address && pendingFocusRef.current.mode === ...
+Next.js build worker exited with code: 1 and signal: null

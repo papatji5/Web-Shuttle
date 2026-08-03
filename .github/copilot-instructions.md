@@ -1,0 +1,5 @@
+﻿- Keep changes minimal and MVP-focused.
+- Web-first only (no native mobile code).
+- Use Supabase for auth, database, realtime, and storage.
+- Prefer server components + server-side auth checks for protected pages.
+- Do not add new UI themes or hard-coded colors.

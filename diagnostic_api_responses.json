@@ -1,0 +1,12 @@
+﻿[
+    {
+        "Url":  "http://localhost:3000/api/rides/create-pending",
+        "Status":  "ERROR",
+        "Content":  "The remote server returned an error: (500) Internal Server Error.\nRESPONSE:\n"
+    },
+    {
+        "Url":  "http://localhost:3000/api/payment/initialize-stripe",
+        "Status":  "ERROR",
+        "Content":  "The remote server returned an error: (500) Internal Server Error.\nRESPONSE:\n"
+    }
+]
